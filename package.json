@@ -1,0 +1,19 @@
+{
+  "name": "p3_reynaert_antoon",
+  "version": "1.0.0",
+  "description": "Dynamisez une page web avec des animations CSS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AreyDev/AntoonReynaert_3_11012022.git"
+  },
+  "author": "ARey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AreyDev/AntoonReynaert_3_11012022/issues"
+  },
+  "homepage": "https://github.com/AreyDev/AntoonReynaert_3_11012022#readme"
+}
