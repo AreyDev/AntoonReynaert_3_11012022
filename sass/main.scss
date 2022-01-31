@@ -248,6 +248,7 @@ body {
         grid-template-columns: 1fr;
         grid-gap: 20px;
         padding: 20px;
+        
     }
     &__card {
         position: relative;
@@ -301,45 +302,29 @@ body {
                 font-weight: 700;
             }
         }
-    }
-}
-.footer {
-    width: 100%;
-    background-color: #353535;
-    @include flexbox-center;
-    &__bloc {
-        display: inline;
-        padding: 0 40px;
-        width: 100%;
-        max-width: 1200px;
-        & .logo {
-            font-family: 'Shrikhand', cursive;
-            color: white;
-            font-size: 20px;
-            padding: 15px 0;
+        &-hearth {
+            @include flexbox-center;
+            margin-right: 20px;
+            width: 30px;
         }
-        &-links {
-            display: inline-flex;
-            flex-direction: column;
-            width: auto;
-        }
-        &-link {
-            display: inline-flex;
-            align-items: center;
-            flex-direction: row;
-            text-align: center;
-            color: white;
-            height: 30px;
+        .heart {
+            width: 30px;
+            stroke-width: 30;
+            stroke: #FF79DA;
+            fill: white;
             cursor: pointer;
-            &:hover .footer__bloc-link__title {
-                text-decoration: underline;
-            }
-            & i {
-             margin-right: 7px;
-            }
-            &__title {
-                font-size: 16px;
-                font-weight: 400;
+          }
+          .heart-full {
+          position: absolute;
+          fill: url(#text-fill);
+          stroke: none;
+        }
+        .heart-empty {
+            width: 50px;
+            position: relative; 
+            &:hover {
+              opacity: 0;
+              transition: 0.5s;
             }
         }
     }

@@ -537,9 +537,7 @@ body {
   font-weight: 700;
 }
 
-.footer {
-  width: 100%;
-  background-color: #353535;
+.restaurant__block-hearth {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -549,61 +547,33 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 20px;
+  width: 30px;
 }
 
-.footer__bloc {
-  display: inline;
-  padding: 0 40px;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.footer__bloc .logo {
-  font-family: 'Shrikhand', cursive;
-  color: white;
-  font-size: 20px;
-  padding: 15px 0;
-}
-
-.footer__bloc-links {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: auto;
-}
-
-.footer__bloc-link {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  text-align: center;
-  color: white;
-  height: 30px;
+.restaurant__block .heart {
+  width: 30px;
+  stroke-width: 30;
+  stroke: #FF79DA;
+  fill: white;
   cursor: pointer;
 }
 
-.footer__bloc-link:hover .footer__bloc-link__title {
-  text-decoration: underline;
+.restaurant__block .heart-full {
+  position: absolute;
+  fill: url(#text-fill);
+  stroke: none;
 }
 
-.footer__bloc-link i {
-  margin-right: 7px;
+.restaurant__block .heart-empty {
+  width: 50px;
+  position: relative;
 }
 
-.footer__bloc-link__title {
-  font-size: 16px;
-  font-weight: 400;
+.restaurant__block .heart-empty:hover {
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 /* Responsive */
